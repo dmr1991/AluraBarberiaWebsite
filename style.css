@@ -1,0 +1,111 @@
+header {
+  background: #cccccc;
+}
+.navigation {
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0px;
+}
+nav li {
+  display: inline-block;
+  margin: 0 0 0 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  color: black;
+}
+
+nav a:hover {
+  color: #eaa41a;
+}
+
+.productos {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+  height: 400px;
+}
+.productos li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  border: 2px solid black;
+  border-radius: 10px;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box; /* le digo que ese padding no va a ir adicional sino que se tiene que lograr dentro del 30% del tamano de mi elemento total, es decir hace que se meta hacia adentro los demas valores en vez de anchar la caja*/
+}
+.productos li:hover {
+  border: 2px solid #eaa41a;
+  transition: 0.2s;
+}
+
+.productos li:hover h2 {
+  font-size: 33px;
+  transition: 0.2s;
+}
+.productos li:active {
+  border: 2px solid #0033d9;
+}
+.productos h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.producto-descripcion {
+  font-size: 15px;
+}
+.producto-precio {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+main {
+  width: 940px;
+  margin: 0 auto;
+}
+
+form {
+  margin: 40px 0;
+}
+
+form h2{
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 20px 0px 30px 0px;
+}
+form label,
+form p {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.input-padron {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+.checkbox {
+  margin: 20px 7px 20px 0;
+}
+footer {
+  text-align: center;
+  background: url(images/bg.jpg);
+  padding: 40px;
+}
+.copyright {
+  color: white;
+  margin-top: 10px;
+}
