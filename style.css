@@ -1,3 +1,6 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
 header {
   background: #cccccc;
 }
@@ -27,7 +30,9 @@ nav a {
 nav a:hover {
   color: #eaa41a;
 }
-
+.hamburger-mobile {
+  display: none;
+}
 .productos {
   width: 1000px;
   margin: 0 auto;
@@ -69,23 +74,17 @@ nav a:hover {
   font-weight: bold;
   margin-top: 10px;
 }
-
-main {
-  width: 940px;
-  margin: 0 auto;
-}
-
 form {
   margin: 40px 0;
 }
 
-form h2{
+form h2 {
   font-size: 40px;
   text-transform: uppercase;
   margin: 20px 0px 30px 0px;
 }
 form label,
-form p {
+form legend {
   display: block;
   font-size: 20px;
   margin: 0 0 10px;
@@ -100,6 +99,38 @@ form p {
 .checkbox {
   margin: 20px 7px 20px 0;
 }
+.enviar {
+  width: 40%;
+  padding: 15px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: orange;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background-color: rgb(255, 106, 0);
+  transition: 0.3s;
+  scale: 101%;
+}
+
+table {
+  margin: 40px 40px;
+}
+thead {
+  background-color: #555555;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  border: 1px solid black;
+  padding: 6px;
+}
 footer {
   text-align: center;
   background: url(images/bg.jpg);
@@ -108,4 +139,154 @@ footer {
 .copyright {
   color: white;
   margin-top: 10px;
+}
+/*CSS PARA HOME */
+.banner {
+  width: 100%;
+}
+.principal {
+  background: #fefefe;
+  padding: 3em 0;
+  width: 940px;
+  margin: 0 auto;
+}
+.titulo-principal {
+  text-align: center;
+  font-size: 3em;
+  margin: 1em 0;
+  clear: left;
+}
+
+.principal p {
+  line-height: 1.5;
+  margin: 1.5em 0;
+}
+.principal strong {
+  font-weight: bold;
+}
+.principal em {
+  font-style: italic;
+}
+.utensilios {
+  width: 200px;
+  float: left;
+  margin: 20px 20px 20px 0;
+}
+
+.mapa {
+  padding: 3em 0;
+  background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa p {
+  margin: 0 0 1em;
+  text-align: center;
+}
+iframe {
+  margin: 1em 0;
+  height: 315px;
+}
+.mapa-contenido {
+  width: 940px;
+  margin: 0 auto;
+}
+.diferenciales {
+  padding: 3em 0;
+  background-color: #888888;
+  box-sizing: border-box;
+}
+.contenido-diferenciales {
+  width: 1000px;
+  margin: 10px auto;
+  padding: 20px;
+}
+.lista-diferenciales {
+  list-style-type: "٭ ";
+  width: 40%;
+  font-size: larger;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 30px;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+.items {
+  line-height: 1.5;
+}
+.items:first-child {
+  font-weight: bold;
+}
+.imagen-diferenciales {
+  width: 50%;
+  display: inline-block;
+  margin-left: 10%;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 20px 2px black;
+}
+
+.imagen-diferenciales:hover {
+  opacity: 0.3;
+  transition: 400ms;
+}
+.video {
+  width: 560px;
+  margin: 2.5em auto 1em auto;
+}
+
+@media screen and (max-width: 480px) {
+  .caja,
+  .principal,
+  .mapa,
+  .contenido-diferenciales,
+  .video,
+  .mapa-contenido,
+  .navigation {
+    width: auto;
+  }
+  .logo-navigation {
+    width: 80px;
+  }
+  nav {
+    display: none;
+  }
+  .mobile-image {
+    display: inline-block;
+  }
+  .hamburger-image {
+    position: absolute;
+    width: 50px;
+    top: 35px;
+    right: 10px;
+  }
+  .logo-footer {
+    width: 70px;
+  }
+  .lista-diferenciales {
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+  .imagen-diferenciales {
+    width: 100%;
+    margin: 10px auto;
+    box-sizing: border-box;
+    box-shadow: 0 0 0;
+  }
+  .titulo-principal {
+    text-align: center;
+    font-size: 3em;
+    margin: 0.5em 0;
+  }
+  p {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .utensilios {
+    width: 190px;
+    float: left;
+    margin: 20px 20px 20px 20px;
+  }
+  iframe {
+    height: 215px;
+  }
 }
