@@ -30,7 +30,7 @@ nav a {
 nav a:hover {
   color: #eaa41a;
 }
-.hamburger-mobile {
+.mobile-nav {
   display: none;
 }
 .productos {
